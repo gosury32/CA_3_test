@@ -111,7 +111,7 @@
 #### &emsp; url : https://wepplication.github.io/tools/compareDoc/
 </br>
 
-# 7. ./choi 실행파일
+# 7. choi 실행파일
 * 더 많은 엣지 케이스나 옵션에 대한 결과를 비교하고 싶으면 choi실행파일에 원하는 옵션을 주어 나온 결과를 자신의 결과와 비교할 수 있다.
 #### 예시)
 <pre><code>./choi -atp sample.o -n 12 -d</code></pre>
