@@ -55,8 +55,8 @@
   ./runfile -antp sample2.o -n 0 -m 0x400000:0x400030 >> result2/result2_2.txt && 
   ./runfile -atp sample2.o -m 0x10000000:0x10000004 >> result2/result2_3.txt && 
   ./runfile -antp sample2.o -m 0x10000000:0x10000004 >> result2/result2_4.txt && 
-  ./runfile -atp sample2.o -m 0x10000000:0x10000004 -d >> result2/result2_5.txt && .
-  /runfile -antp sample2.o -m 0x10000000:0x10000004 -d >> result2/result2_6.txt && 
+  ./runfile -atp sample2.o -m 0x10000000:0x10000004 -d >> result2/result2_5.txt && 
+  ./runfile -antp sample2.o -m 0x10000000:0x10000004 -d >> result2/result2_6.txt && 
   ./runfile -atp sample2.o -m 0x10000000:0x10000004 -d -p >> result2/result2_7.txt && 
   ./runfile -antp sample2.o -m 0x10000000:0x10000004 -d -p >> result2/result2_8.txt && 
   ./runfile -atp sample2.o -m 0x10000000:0x10000004 -d -p -n 10 >> result2/result2_9.txt && 
