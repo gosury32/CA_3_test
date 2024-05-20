@@ -11,7 +11,7 @@
 # 2. sample.o에 대한 실행 결과 저장
 * sample.o는 atp 및 antp의 옵션에 따른 결과의 차이가 없다. 따라서 atp, antp옵션의 구현에 확신이 있다면 홀수번째 결과 혹은 짝수번째 결과만 비교하여도 무방하다.
 
-### 홀수번째 실행 결과만을 저장하기 위한 명령어 (-atp인 경우)
+### 2-1. 홀수번째 실행 결과만을 저장하기 위한 명령어 (-atp인 경우)
 <pre><code>mkdir result1_odd && 
   ./runfile -atp sample.o -n 0 -m 0x400000:0x400050 >> result1_odd/result1_1.txt && 
   ./runfile -atp sample.o -m 0x10000000:0x10000010 >> result1_odd/result1_3.txt && 
@@ -20,7 +20,7 @@
   ./runfile -atp sample.o -m 0x10000000:0x10000010 -d -p -n 5 >> result1_odd/result1_9.txt &&
   ./runfile -atp sample.o -m 0x10000000:0x10000010 -d -p -n 15 >> result1_odd/result1_11.txt && 
   ./runfile -atp sample.o >> result1_odd/result1_13.txt</code></pre>
-### 짝수번째 실행 결과만을 저장하기 위한 명령어 (-antp인 경우)
+### 2-2. 짝수번째 실행 결과만을 저장하기 위한 명령어 (-antp인 경우)
 <pre><code>mkdir result1_even && 
   ./runfile -antp sample.o -n 0 -m 0x400000:0x400050 >> result1_even/result1_2.txt && 
   ./runfile -antp sample.o -m 0x10000000:0x10000010 >> result1_even/result1_4.txt && 
@@ -29,7 +29,7 @@
   ./runfile -antp sample.o -m 0x10000000:0x10000010 -d -p -n 5 >> result1_even/result1_10.txt && 
   ./runfile -antp sample.o -m 0x10000000:0x10000010 -d -p -n 15 >> result1_even/result1_12.txt && 
   ./runfile -antp sample.o >> result1_even/result1_14.txt</code></pre>
-### 전체 실행 결과를 저장하기 위한 명령어
+### 2-3. 전체 실행 결과를 저장하기 위한 명령어
 <pre><code>mkdir result1 && 
   ./runfile -atp sample.o -n 0 -m 0x400000:0x400050 >> result1/result1_1.txt && 
   ./runfile -antp sample.o -n 0 -m 0x400000:0x400050 >> result1/result1_2.txt && 
